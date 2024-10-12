@@ -1,8 +1,15 @@
 from openai import OpenAI
 import streamlit as st
 
+# Accessing API keys from secrets
+pinecone_api_key = st.secrets["api_keys"]["pinecone_api_key"]
+pinecone_environment = st.secrets["api_keys"]["pinecone_environment"]
+openai_api_key = st.secrets["api_keys"]["openai_api_key"]
+claude_api_key = st.secrets["api_keys"]["claude_api_key"]
+openai_api_key = st.secrets["OPENAI_API_KEY"]
+
 with st.sidebar:
-    openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
+    # openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
     "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
     "[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)"
     "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"

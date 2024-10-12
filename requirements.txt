@@ -5,3 +5,13 @@ anthropic>=0.3.0
 trubrics>=1.4.3
 streamlit-feedback
 langchain-community
+pandasai
+pyYAML
+langchain_google_genai
+google-generativeai
+python-dotenv
+xlrd
+openpyxl
+pandas
+numpy
+plotly
